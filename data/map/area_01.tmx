@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="10">
+ <tileset firstgid="1" name="Road" tilewidth="32" tileheight="32" tilecount="1024" columns="32">
+  <image source="Road.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="1025" name="Road" tilewidth="32" tileheight="32" tilecount="1024" columns="32">
+  <image source="Road.png" width="1024" height="1024"/>
+ </tileset>
+ <layer name="Calque de Tile 1" width="20" height="15">
+  <data encoding="base64">
+   KwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAAIUBAACGAQAAhwEAAIgBAACJAQAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAApQEAAKYBAACnAQAAqAEAAKkBAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAADFAQAAxgEAAMcBAADIAQAAyQEAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAAOUBAADmAQAA5wEAAOgBAADpAQAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAABQIAAAYCAAAHAgAACAIAAAkCAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAAFAwAABgMAAAcDAADoAgAA6QIAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAAAUDAAAGAwAABwMAAOgCAADpAgAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAABQMAAAYDAAAHAwAA6AIAAOkCAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAAFAwAABgMAAAcDAADoAgAA6QIAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAAAUDAAAGAwAABwMAAOgCAADpAgAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAABQMAAAYDAAAHAwAA6AIAAOkCAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAADlAgAA5gIAAOcCAADoAgAA6QIAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAAAUDAAAGAwAABwMAAAgDAAAJAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAJQMAACYDAAAnAwAAKAMAACkDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAABFAwAAwwAAAMMAAADEAAAASQMAACsDAAArAwAAKwMAACsDAAArAwAAKwMAACsDAAArAwAA
+  </data>
+ </layer>
+ <objectgroup color="#00ff00" name="Calque d'objets 1">
+  <object id="1" name="mainPlayer" x="266" y="1" width="32" height="32">
+   <properties>
+    <property name="frameheight" type="int" value="32"/>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="FauxCamion2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ff00ff" name="collision">
+  <object id="7" x="353" y="2" width="279" height="477"/>
+  <object id="8" x="24" y="1" width="240" height="482"/>
+  <object id="9" x="224" y="464" width="167" height="35"/>
+ </objectgroup>
+</map>
