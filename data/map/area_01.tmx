@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="10">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="15">
  <tileset firstgid="1" name="Road" tilewidth="32" tileheight="32" tilecount="1024" columns="32">
   <image source="Road.png" width="1024" height="1024"/>
  </tileset>
@@ -17,6 +17,24 @@
     <property name="frameheight" type="int" value="32"/>
     <property name="framewidth" type="int" value="32"/>
     <property name="image" value="FauxCamion2"/>
+   </properties>
+  </object>
+  <object id="10" name="CoinEntity" x="271" y="170" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="coin"/>
+   </properties>
+  </object>
+  <object id="13" name="CoinEntity" x="314" y="88" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="coin"/>
+   </properties>
+  </object>
+  <object id="14" name="CoinEntity" x="313" y="265" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="coin"/>
    </properties>
   </object>
  </objectgroup>
