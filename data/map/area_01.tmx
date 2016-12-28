@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="15">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="17">
  <tileset firstgid="1" name="Road" tilewidth="32" tileheight="32" tilecount="1024" columns="32">
   <image source="Road.png" width="1024" height="1024"/>
  </tileset>
@@ -37,6 +37,7 @@
     <property name="image" value="coin"/>
    </properties>
   </object>
+  <object id="15" name="EnemyEntity" x="265" y="342" width="85" height="33"/>
  </objectgroup>
  <objectgroup color="#ff00ff" name="collision">
   <object id="7" x="353" y="2" width="279" height="477"/>
