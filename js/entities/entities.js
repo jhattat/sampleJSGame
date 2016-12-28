@@ -83,6 +83,7 @@ game.PlayerEntity = me.Entity.extend({
         // Make all other objects solid
         
         if(response.b.body.collisionType === me.collision.types.ENEMY_OBJECT){
+            me.audio.play("enemykill");
             this.renderable.flicker(750);
             return true;
         }
@@ -103,6 +104,9 @@ game.CoinEntity = me.CollectableEntity.extend({
   // this function is called by the engine, when
   // an object is touched by something (here collected)
   onCollision : function (response, other) {
+    // play a "coin collected" sound
+    me.audio.play("cling");
+
     // do something when collected
      game.data.score += 250;
 
