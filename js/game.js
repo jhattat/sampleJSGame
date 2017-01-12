@@ -17,6 +17,7 @@ var game = {
             return;
         }
 
+        
         // Initialize the audio.
         me.audio.init("mp3,ogg");
 
@@ -31,10 +32,16 @@ var game = {
         me.state.set(me.state.MENU, new game.TitleScreen());
         me.state.set(me.state.PLAY, new game.PlayScreen());
 
+        // set a global fading transition for the screen
+        me.state.transition("fade", "#FFFFFF", 250);
+
+
         // add our player entity in the entity pool
         me.pool.register("mainPlayer", game.PlayerEntity);
         me.pool.register("CoinEntity", game.CoinEntity);
         me.pool.register("EnemyEntity", game.EnemyEntity);
+        me.pool.register("BarrierEntity", game.BarrierEntity);
+        
 
         // enable the keyboard
         me.input.bindKey(me.input.KEY.DOWN,  "down");
@@ -42,8 +49,9 @@ var game = {
         me.input.bindKey(me.input.KEY.RIGHT,  "right");
         me.input.bindKey(me.input.KEY.LEFT, "left");
 
+
         // Start the game.
-        me.state.change(me.state.PLAY);
+        me.state.change(me.state.MENU);
 
     }
 };

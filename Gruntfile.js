@@ -136,6 +136,9 @@ module.exports = function(grunt) {
           src: ['data/img/**/*.png'],
           type: 'image'
         },{
+          src: ['data/img/**/*.jpg'],
+          type: 'image'
+        },{
           src: ['data/img/**/*.json'],
           type: 'json'
         },{
@@ -144,6 +147,12 @@ module.exports = function(grunt) {
         },{
           src: ['data/map/**/*.tsx'],
           type: 'tsx'
+        },{
+          src: ['data/fnt/*.fnt'],
+          type: 'binary'
+        },{
+          src: ['data/fnt/*.png'],
+          type: 'image'
         }]
       }
     },
